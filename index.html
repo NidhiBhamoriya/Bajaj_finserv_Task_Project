@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ABCD123</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>REST API Frontend</h1>
+    <form id="jsonForm">
+      <label for="jsonInput">Enter JSON Data:</label>
+      <textarea id="jsonInput" rows="5" placeholder='{"data": ["A", "1", "b"]}'></textarea>
+      <input type="file" id="fileInput" />
+      <button type="submit">Submit</button>
+    </form>
+    <div id="dropdownContainer" style="display: none;">
+      <h3>Filter Options:</h3>
+      <label><input type="checkbox" value="alphabets" /> Alphabets</label>
+      <label><input type="checkbox" value="numbers" /> Numbers</label>
+      <label><input type="checkbox" value="highest_lowercase" /> Highest Lowercase Alphabet</label>
+    </div>
+    <div id="responseContainer" style="display: none;">
+      <h3>Response:</h3>
+      <pre id="responseData"></pre>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
